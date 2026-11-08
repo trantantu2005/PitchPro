@@ -178,18 +178,41 @@ Nội dung README được tổng hợp từ mã nguồn và tài liệu đi kè
 
 ## 7. Vai trò và đóng góp cá nhân
 
-**Hình thức thực hiện:** Đồ án nhóm – Hệ thống thông tin quản lý.
+**Vai trò:** Full-stack Developer & System Analyst – Phụ trách toàn bộ quá trình phân tích, thiết kế, phát triển và hoàn thiện hệ thống PitchPro.
 
-**Vai trò:** [Điền vai trò của bạn trong nhóm].
+### 7.1. Phân tích và thiết kế hệ thống
+- Phân tích yêu cầu và xây dựng các quy trình nghiệp vụ quản lý đặt sân, dịch vụ, thanh toán và đối soát doanh thu cuối ngày.
+- Mô hình hóa quy trình nghiệp vụ bằng BPMN, phân tích và đề xuất cải tiến quy trình.
+- Thiết kế sơ đồ thực thể – liên kết (ERD), xác định các bảng dữ liệu, khóa chính, khóa ngoại và mối quan hệ trong hệ thống.
+- Xây dựng cấu trúc cơ sở dữ liệu phục vụ hai quy trình nghiệp vụ trên cùng một hệ thống.
 
-**Các công việc trực tiếp thực hiện:**
+### 7.2. Phát triển ứng dụng web
+- Xây dựng ứng dụng web bằng Python và Django, kết hợp HTML, CSS và JavaScript để phát triển giao diện người dùng.
+- Triển khai các chức năng quản lý đặt sân, nhận/trả sân, hủy sân, dịch vụ, hàng hóa, hóa đơn và thanh toán.
+- Xây dựng chức năng tổng hợp giao dịch, đối soát doanh thu, phát hiện chênh lệch và quản lý báo cáo cuối ngày.
+- Thiết lập xác thực, đăng nhập và phân quyền theo ba vai trò: Customer, Staff và Manager.
+- Xử lý các nghiệp vụ và kết nối dữ liệu giữa Frontend, Backend và cơ sở dữ liệu SQLite.
 
-- [Các chức năng hoặc module bạn tham gia phát triển].
-- [Công việc phân tích quy trình BPMN, thiết kế ERD hoặc cơ sở dữ liệu nếu có].
-- [Công việc lập trình, kiểm thử, sửa lỗi hoặc tích hợp hệ thống bạn đã thực hiện].
+### 7.3. Tích hợp AI hỗ trợ nghiệp vụ
+- Tích hợp chức năng AI hỗ trợ phân tích nguyên nhân chênh lệch doanh thu trong quy trình đối soát.
+- Xây dựng luồng tiếp nhận thông tin, gửi yêu cầu tới mô hình AI và hiển thị kết quả gợi ý cho người dùng.
+- Đảm bảo AI đóng vai trò hỗ trợ phân tích, không tự động thay đổi số liệu hoặc thực hiện các quyết định phê duyệt.
 
-*Chỉ trình bày những công việc thực tế để bảo đảm có thể giải thích và chứng minh khi phỏng vấn.*
+### 7.4. Kiểm thử và hoàn thiện
+- Thực hiện kiểm thử các chức năng và luồng nghiệp vụ của hệ thống.
+- Phát hiện, phân tích và khắc phục lỗi trong quá trình phát triển.
+- Kiểm tra tính nhất quán dữ liệu giữa các module và hoàn thiện chức năng theo yêu cầu nghiệp vụ.
+- Xây dựng tài liệu mô tả hệ thống, quy trình nghiệp vụ và hướng dẫn sử dụng.
 
+### 7.5. Kỹ năng và kinh nghiệm tích lũy
+
+- **Backend Development:** Python, Django, Django ORM.
+- **Frontend Development:** HTML, CSS, JavaScript.
+- **Database Design:** SQLite, SQL, ERD.
+- **Business & System Analysis:** BPMN, phân tích và thiết kế hệ thống thông tin.
+- **AI Integration:** Tích hợp API AI hỗ trợ quy trình nghiệp vụ.
+- **Software Testing:** Kiểm thử chức năng, phân tích và xử lý lỗi.
+- **Problem Solving:** Phân tích yêu cầu, giải quyết vấn đề và hoàn thiện sản phẩm phần mềm.
 ## 8. Giới hạn và lưu ý
 
 - PitchPro là nguyên mẫu phục vụ mục đích học tập và trình diễn.
