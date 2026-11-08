@@ -1,0 +1,75 @@
+
+CHÍNH SÁCH HỦY ĐẶT SÂN – PITCHPRO
+PHIÊN BẢN GIẢ LẬP DÙNG ĐỂ KIỂM THỬ AI
+
+Điều 1. Hủy sân trước giờ nhận sân
+
+1.1. Khách hủy sân từ 24 giờ trở lên trước giờ bắt đầu:
+Được đề xuất hoàn lại 100% tiền cọc đã nhận.
+
+1.2. Khách hủy sân từ 2 giờ đến dưới 24 giờ
+trước giờ bắt đầu:
+Được đề xuất hoàn lại 50% tiền cọc đã nhận.
+
+1.3. Khách hủy sân dưới 2 giờ trước giờ bắt đầu:
+Không được hoàn tiền cọc theo chính sách thông thường.
+
+Điều 2. Hủy sân do điều kiện thời tiết
+
+Nếu sân phải ngừng hoạt động do thời tiết nguy hiểm
+và được quản lý xác nhận, khách có thể được xem xét
+hoàn lại 100% tiền cọc.
+
+Nếu chỉ có thông báo từ khách hàng nhưng chưa xác minh
+được sân phải ngừng hoạt động, nhân viên phải chuyển
+quản lý kiểm tra.
+
+Điều 3. Khách đã nhận sân
+
+Nếu khách đã nhận sân và bắt đầu sử dụng,
+không tự động áp dụng chính sách hoàn cọc trước giờ nhận.
+Nhân viên phải báo quản lý xem xét trường hợp cụ thể.
+
+Điều 4. Thẩm quyền quyết định
+
+AI chỉ được tìm điều khoản, tóm tắt dữ kiện
+và gợi ý phương án xử lý.
+
+Nhân viên kiểm tra thời gian, trạng thái đặt sân
+và khoản cọc đã thu.
+
+Quản lý là người có thẩm quyền phê duyệt phương án
+hủy sân và hoàn tiền.
+
+Không được tự động thay đổi hóa đơn, xác nhận hoàn tiền
+hoặc chuyển trạng thái đặt sân chỉ dựa trên kết quả AI.
+
+
+Điều 5. Các trường hợp không được hủy sân trực tiếp
+
+5.1. Lượt đã nhận sân: không hủy; sử dụng quy trình Trả sân.
+
+5.2. Lượt đã trả sân hoặc đã hủy:
+không được hủy thêm lần nữa.
+
+5.3. Hóa đơn không ở trạng thái Nháp,
+có giao dịch chờ xác minh, đã bán thêm dịch vụ,
+đã ghi nhận hoàn tiền hoặc ngày đã khóa sổ:
+chuyển quản lý xử lý ngoại lệ.
+
+5.4. Đã đến hoặc quá giờ bắt đầu:
+không dùng chức năng Hủy sân thông thường.
+
+5.5. Hủy lịch không đồng nghĩa hoàn cọc.
+Khoản tiền đã thu được giữ nguyên đến khi
+có quyết định và chứng từ hoàn tiền.
+
+Điều 6. Thời điểm và trách nhiệm AI
+
+Mốc 24 giờ và 2 giờ được tính từ thời điểm
+server nhận yêu cầu đến giờ bắt đầu.
+
+AI chỉ giải thích và đề xuất,
+không có quyền hủy sân hoặc hoàn tiền.
+
+Quản lý chịu trách nhiệm quyết định khoản cọc.

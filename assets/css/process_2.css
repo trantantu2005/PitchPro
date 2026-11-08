@@ -1,0 +1,80 @@
+/* Quy trình 2 - đối soát doanh thu */
+.qt02-toolbar { display:flex; align-items:end; gap:12px; flex-wrap:wrap; }
+.qt02-toolbar label { display:flex; flex-direction:column; gap:6px; font-size:12px; color:#567166; font-weight:700; }
+.qt02-panel { margin-top:16px; }
+.qt02-panel-head { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.qt02-panel-head h2 { margin:0 0 12px; }
+.qt02-gridstats { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin:12px 0; }
+.qt02-gridstats .stat { min-width:0; }
+.qt02-form { margin-top:14px; padding:14px; border:1px solid #e1ebe5; border-radius:12px; background:#f9fbfa; }
+.qt02-form textarea { width:100%; min-height:100px; resize:vertical; }
+.qt02-form input, .qt02-form select, .qt02-form textarea { box-sizing:border-box; }
+.qt02-wide { grid-column:1/-1; }
+.qt02-inline-form { display:grid; gap:6px; min-width:210px; }
+.qt02-inline-form input, .qt02-inline-form select { width:100%; min-height:34px; border:1px solid #d7e3dc; border-radius:7px; padding:6px 8px; }
+.qt02-topline { display:flex; align-items:center; gap:12px; margin:12px 0; }
+.qt02-pill { display:inline-flex; padding:5px 9px; border-radius:999px; font-size:11px; font-weight:800; background:#edf1ee; color:#51665b; }
+.qt02-pill.success { background:#e5f5eb; color:#16734e; }
+.qt02-pill.info { background:#e8f1fb; color:#285e94; }
+.qt02-pill.warning { background:#fff3df; color:#98631a; }
+.qt02-pill.muted { background:#edf1ee; color:#51665b; }
+.qt02-exception { border:1px solid #e4eae6; border-radius:10px; padding:13px; margin:10px 0; background:#fcfdfc; }
+.qt02-exception-head { display:flex; justify-content:space-between; gap:12px; align-items:flex-start; }
+.qt02-exception p { margin:7px 0; font-size:13px; }
+.qt02-ok { color:#14754f; font-weight:700; }
+.qt02-alert { margin:12px 0; padding:11px 13px; border-left:4px solid #d49b38; border-radius:7px; background:#fff8eb; color:#76521b; }
+.qt02-alert p { margin:5px 0; }
+.qt02-panel .muted, .qt02-form small { color:#64766d; font-size:12px; line-height:1.6; }
+.qt02-panel table small { display:block; margin-top:4px; max-width:280px; }
+@media (max-width:850px) { .qt02-gridstats { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:560px) { .qt02-gridstats { grid-template-columns:1fr; } .qt02-exception-head { flex-direction:column; } .qt02-wide { grid-column:auto; } }
+
+
+/* Lịch sử phiên bản giải trình và quyết định ngoại lệ */
+.qt02-history { margin-top: 12px; padding: 10px 12px; border: 1px solid #dfe9e3; border-radius: 9px; background: #f8fbf9; }
+.qt02-history summary { cursor: pointer; color: #245b45; font-size: 13px; font-weight: 800; }
+.qt02-history-item { margin-top: 10px; padding: 10px; border-left: 3px solid #9bb9a7; background: #fff; border-radius: 6px; }
+.qt02-history-item small { display: block; margin-top: 4px; color: #68796f; }
+.qt02-history-item p { margin: 6px 0; font-size: 12px; white-space: pre-wrap; overflow-wrap: anywhere; }
+
+/* A4 - AI hỗ trợ rà soát QT02 (chỉ gợi ý, không tự quyết định) */
+.qt02-ai-status {
+  display:flex; flex-direction:column; gap:4px; margin:12px 0; padding:11px 14px;
+  border:1px solid #cfe7d8; border-radius:10px; background:#f0faf4; color:#155b40;
+  font-size:12px; line-height:1.55;
+}
+.qt02-ai-status.unavailable {
+  border-color:#f0dfbd; background:#fff9ed; color:#80591c;
+}
+.qt02-ai-button { background:#eaf6ef; color:#176b4b; border:1px solid #cce7d8; }
+.qt02-ai-button:disabled { opacity:.55; cursor:not-allowed; }
+.qt02-ai-form { display:grid; gap:9px; margin-top:10px; padding:12px; border:1px dashed #b8d9c5; border-radius:9px; background:#f7fbf8; }
+.qt02-ai-form textarea { width:100%; box-sizing:border-box; resize:vertical; min-height:72px; }
+.qt02-ai-form input[type=file] { width:100%; font-size:12px; }
+.qt02-ai-form small { display:block; color:#6b7d73; line-height:1.5; }
+.qt02-ai-result { margin-top:10px; padding:12px; border:1px solid #cfe3d7; border-radius:10px; background:#f8fcf9; color:#274b3a; }
+.qt02-ai-result-head { display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; color:#176b4b; }
+.qt02-ai-result-head small { color:#6b7d73; font-size:11px; }
+.qt02-ai-result p { margin:8px 0; font-size:12px; line-height:1.6; }
+.qt02-ai-columns { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin:10px 0; }
+.qt02-ai-columns > div { padding:9px; border:1px solid #e0ebe4; border-radius:8px; background:#fff; font-size:12px; }
+.qt02-ai-columns ul { margin:6px 0 0; padding-left:18px; }
+.qt02-ai-columns li { margin:4px 0; line-height:1.5; }
+.qt02-ai-disclaimer { padding-top:8px; border-top:1px solid #dce9e0; color:#76551d !important; font-weight:700; }
+.qt02-evidence-list { margin:9px 0; padding:9px 11px; background:#f5f8f6; border-radius:8px; font-size:12px; }
+.qt02-evidence-list small { color:#718178; }
+@media (max-width:650px) { .qt02-ai-columns { grid-template-columns:1fr; } }
+
+
+/* QT02 - nhập sao kê theo từng trường, không cần cú pháp CSV/ISO */
+.qt02-bank-entries { display:grid; gap:10px; margin-top:10px; }
+.qt02-bank-entry { padding:12px; border:1px solid #d8e7de; border-radius:10px; background:#fff; }
+.qt02-bank-fields { display:grid; grid-template-columns:minmax(170px,1.2fr) minmax(135px,.7fr) minmax(160px,1.4fr) minmax(175px,1fr); gap:10px; align-items:end; }
+.qt02-bank-fields .field { display:flex; flex-direction:column; gap:6px; min-width:0; }
+.qt02-bank-fields label { font-size:12px; font-weight:700; color:#3f6352; }
+.qt02-bank-fields input { width:100%; min-width:0; padding:8px 9px; border:1px solid #cfdfd5; border-radius:7px; background:#fff; color:#243f30; }
+.qt02-bank-entry .qt02-bank-remove { margin-top:9px; }
+.qt02-bank-tools { display:flex; flex-wrap:wrap; gap:8px; margin:10px 0; }
+.qt02-bank-preview { display:block; margin:9px 0 3px; font-size:13px; font-weight:800; color:#276143; }
+@media (max-width:1050px) { .qt02-bank-fields { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:650px) { .qt02-bank-fields { grid-template-columns:1fr; } }

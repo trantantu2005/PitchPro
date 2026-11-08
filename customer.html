@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#103a30">
+  <title>PitchPro | Đặt sân dành cho khách hàng</title>
+  <link rel="stylesheet" href="/assets/css/customer.css">
+  <script defer src="/assets/js/customer.js?v=20261105-unified1"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a href="/khach/" class="brand"><span class="brandicon">P<span>•</span></span><span>Pitch<span class="brandcolor">Pro</span><small>ĐẶT SÂN TRỰC TUYẾN</small></span></a>
+    <nav class="toplinks" aria-label="Chuyển trang"><button class="navtab" type="button" data-view="find" hidden id="tabFind">Tìm sân</button><button class="navtab" type="button" data-view="mine" hidden id="tabMine">Lịch của tôi</button></nav>
+    <div class="account"><span id="who"></span><button type="button" id="logout" class="btn ghost" hidden>Đăng xuất</button></div>
+  </header>
+  <main class="main">
+    <section class="intro"><p class="eyebrow">SÂN BÓNG THÀNH CÔNG</p><h1>Chọn sân phù hợp.<br><span>Đặt lịch dễ dàng.</span></h1><p>Kiểm tra khung giờ còn trống, đặt sân và xem lại lịch đặt của bạn ngay trên PitchPro.</p><div class="intro-tags"><span>⚽ Sân 5 · Sân 7</span><span>🕒 Đặt theo mốc 30 phút</span><span>🔒 Lịch đặt riêng tư</span></div></section>
+    <div id="message" class="notice" role="status" hidden></div>
+    <div id="app" aria-live="polite"><section class="panel loading">Đang kết nối PitchPro…</section></div>
+    <footer class="footer">PitchPro · Nguyên mẫu học phần MIS3047. Giai đoạn 2 chưa tích hợp thanh toán tiền cọc.</footer>
+  </main>
+</body>
+</html>

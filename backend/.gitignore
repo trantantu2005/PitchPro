@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.py[cod]
+db.sqlite3
+db.sqlite3-*
+.env
+
+# QT02 evidence uploads (do not commit uploaded evidence)
+media/

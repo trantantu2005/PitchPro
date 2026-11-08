@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c3029">
+  <meta name="description" content="PitchPro - Đăng nhập một lần, sử dụng đúng khu vực dành cho khách hàng, nhân viên và quản lý sân bóng.">
+  <title>Đăng nhập | PitchPro</title>
+  <link rel="stylesheet" href="/assets/css/auth.css?v=20261105-unified1">
+  <script defer src="/assets/js/auth.js?v=20261105-unified1"></script>
+</head>
+<body>
+  <main class="auth-layout">
+    <section class="visual" aria-label="Giới thiệu hệ thống PitchPro">
+      <div class="visual-content">
+        <div class="brand" aria-label="PitchPro">
+          <span class="brand-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m9 9 3-2 3 2-.5 4h-5L9 9Z"/><path d="m9 9-3.5-2M15 9l3.5-2M9.5 13l-2 5M14.5 13l2 5"/></svg>
+          </span>
+          <span>Pitch<span class="brand-light">Pro</span></span>
+        </div>
+        <div class="eyebrow"><span class="eyebrow-dot"></span> NỀN TẢNG QUẢN LÝ SÂN BÓNG</div>
+        <h1>Một tài khoản.<br><em>Đúng không gian</em><br>của bạn.</h1>
+        <p class="intro">Đặt sân nhanh chóng, theo dõi lịch thi đấu và vận hành sân bóng trên cùng một hệ thống thống nhất.</p>
+        <div class="benefits">
+          <div><span class="benefit-icon">✓</span><span>Khách hàng dễ dàng tìm sân và đặt lịch</span></div>
+          <div><span class="benefit-icon">✓</span><span>Nhân viên quản lý đặt sân và dịch vụ</span></div>
+          <div><span class="benefit-icon">✓</span><span>Quản lý theo dõi doanh thu, phê duyệt đối soát</span></div>
+        </div>
+      </div>
+      <div class="pitch-illustration" aria-hidden="true">
+        <div class="pitch-lines"><div class="pitch-center"></div><div class="goal-area goal-left"></div><div class="goal-area goal-right"></div><div class="center-dot"></div></div>
+      </div>
+      <div class="visual-footer">PITCHPRO <span>·</span> PHÁT TRIỂN CHO DỰ ÁN MIS3047</div>
+    </section>
+
+    <section class="form-side" aria-labelledby="auth-title">
+      <div class="form-container">
+        <div class="mobile-brand"><span class="mobile-mark">⚽</span> Pitch<span>Pro</span></div>
+        <div class="welcome">CHÀO MỪNG BẠN ĐẾN PITCHPRO</div>
+        <h2 id="auth-title">Đăng nhập tài khoản</h2>
+        <p id="auth-description" class="form-description">Sử dụng tài khoản của bạn để truy cập đúng khu vực được phân quyền.</p>
+
+        <div class="auth-switch" role="tablist" aria-label="Chọn hình thức truy cập">
+          <button id="login-tab" type="button" role="tab" aria-selected="true" class="active" data-mode="login">Đăng nhập</button>
+          <button id="register-tab" type="button" role="tab" aria-selected="false" data-mode="register">Đăng ký khách hàng</button>
+        </div>
+        <div class="feedback" id="feedback" role="alert" aria-live="polite" hidden></div>
+
+        <form id="login-form" autocomplete="on">
+          <div class="input-group">
+            <label for="login-username">Tên đăng nhập</label>
+            <div class="input-wrap"><span class="field-symbol" aria-hidden="true">@</span><input id="login-username" name="username" type="text" autocomplete="username" placeholder="Nhập tên đăng nhập" maxlength="150" required></div>
+          </div>
+          <div class="input-group">
+            <label for="login-password">Mật khẩu</label>
+            <div class="input-wrap"><span class="field-symbol" aria-hidden="true">◈</span><input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Nhập mật khẩu" required><button type="button" class="show-password" data-toggle-password="login-password" aria-label="Hiển thị mật khẩu">Hiện</button></div>
+          </div>
+          <button type="submit" class="submit-button" id="login-submit"><span>Đăng nhập</span><span aria-hidden="true">→</span></button>
+          <p class="helper centered">Chưa có tài khoản? <a href="/dang-ky/" data-open-register>Đăng ký khách hàng</a></p>
+        </form>
+
+        <form id="register-form" autocomplete="on" hidden>
+          <div class="input-grid">
+            <div class="input-group"><label for="register-name">Họ và tên</label><input id="register-name" name="name" type="text" autocomplete="name" placeholder="Nguyễn Văn A" maxlength="150" minlength="2" required></div>
+            <div class="input-group"><label for="register-phone">Số điện thoại</label><input id="register-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="09xxxxxxxx" minlength="10" maxlength="10" pattern="0[0-9]{9}" required></div>
+          </div>
+          <div class="input-group"><label for="register-username">Tên đăng nhập</label><div class="input-wrap"><span class="field-symbol" aria-hidden="true">@</span><input id="register-username" name="username" type="text" autocomplete="username" placeholder="Từ 4 đến 30 ký tự" minlength="4" maxlength="30" pattern="[A-Za-z0-9_.-]{4,30}" required></div></div>
+          <div class="input-group"><label for="register-password">Mật khẩu</label><div class="input-wrap"><span class="field-symbol" aria-hidden="true">◈</span><input id="register-password" name="password" type="password" autocomplete="new-password" placeholder="Tối thiểu 10 ký tự" minlength="10" maxlength="128" required><button type="button" class="show-password" data-toggle-password="register-password" aria-label="Hiển thị mật khẩu">Hiện</button></div></div>
+          <div class="input-group"><label for="register-confirm">Nhập lại mật khẩu</label><div class="input-wrap"><span class="field-symbol" aria-hidden="true">◈</span><input id="register-confirm" name="confirmPassword" type="password" autocomplete="new-password" placeholder="Xác nhận mật khẩu" minlength="10" required><button type="button" class="show-password" data-toggle-password="register-confirm" aria-label="Hiển thị mật khẩu">Hiện</button></div></div>
+          <p class="privacy-note">Đăng ký mới chỉ dành cho khách hàng. Tài khoản Nhân viên và Quản lý do đơn vị cấp. Số điện thoại đã có trong hệ thống cần được xác minh trước khi liên kết.</p>
+          <button type="submit" class="submit-button" id="register-submit"><span>Tạo tài khoản khách hàng</span><span aria-hidden="true">→</span></button>
+          <p class="helper centered">Đã có tài khoản? <a href="/dang-nhap/" data-open-login>Quay lại đăng nhập</a></p>
+        </form>
+
+        <div class="security-note"><span class="security-icon">⌑</span><span>Truy cập theo vai trò <strong>Khách hàng · Nhân viên · Quản lý</strong>. Quyền được kiểm tra tại máy chủ.</span></div>
+      </div>
+      <div class="footnote">© 2026 PitchPro · Hệ thống nguyên mẫu phục vụ học phần MIS3047</div>
+    </section>
+  </main>
+</body>
+</html>

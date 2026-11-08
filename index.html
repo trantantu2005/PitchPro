@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PitchPro | Bảng điều khiển nội bộ</title>
+  <link rel="stylesheet" href="/assets/css/app.css">
+  <link rel="stylesheet" href="/assets/css/process_2.css">
+  <script defer src="/assets/js/process_2/reconciliation.js?v=20261106-01"></script>
+  <script defer src="/assets/js/app.js?v=20261105-unified1"></script></head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><div class="brandicon">P<span>•</span></div><div><strong>Pitch<span>Pro</span></strong><small>QUẢN LÝ VẬN HÀNH SÂN BÓNG</small></div></div>
+      <div class="venue"><span>⚽</span><div><b>Sân bóng Thành Công</b><small>Trung tâm vận hành</small></div></div>
+      <p class="navtitle">TỔNG QUAN</p>
+      <nav><a href="#dashboard" data-page="dashboard">▦ <span>Bảng điều khiển</span></a></nav>
+      <p class="navtitle">QUY TRÌNH 1 · DỊCH VỤ & THANH TOÁN</p>
+      <nav><a href="#schedule" data-page="schedule">▤ <span>Lịch & đặt sân</span></a><a href="#invoices" data-page="invoices">▣ <span>Hóa đơn</span></a><a href="#inventory" data-page="inventory">◇ <span>Kho & dịch vụ</span></a></nav>
+      <p class="navtitle">QUY TRÌNH 2 · ĐỐI SOÁT</p>
+      <nav><a href="#recon" data-page="recon">⇄ <span>Đối soát cuối ngày</span></a><a href="#audit" data-page="audit">◷ <span>Nhật ký thao tác</span></a></nav>
+    </aside>
+    <div class="main">
+      <header class="topbar"><div class="crumb"><button class="menubtn" id="menuToggle" aria-label="Mở menu">☰</button><span>PitchPro / </span><strong id="pageName">Bảng điều khiển</strong></div><div class="topright"><span class="user" id="userDisplay"></span><button id="logoutBtn" class="btn outline small" hidden>Đăng xuất</button></div></header>
+      <main id="content" class="content"><div class="loading">Đang kết nối Django...</div></main>
+    </div>
+  </div>
+  <div id="modal" class="modaloverlay" hidden><div class="modalbox"><div class="modalhead"><strong id="modalTitle"></strong><button id="modalClose" type="button" class="cross" aria-label="Đóng">×</button></div><div id="modalBody"></div></div></div>
+  <div id="toast" class="toast" hidden></div>
+</body>
+</html>

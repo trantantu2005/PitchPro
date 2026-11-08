@@ -1,0 +1,39 @@
+PITCHPRO - MOT DU AN DUY NHAT, CO GEMINI AI, DU LIEU 06/11/2026
+==============================================================
+Nguon: PitchPro (2).zip ban da gui.
+1) MA NGUON NGOAI QUY TRINH 2: giu nguyen tu PitchPro/PitchPro.
+2) SQLITE: giu nguyen backend/db.sqlite3 trong PitchPro/PitchPro,
+   co hoa don ngay 06/11/2026 va hai ky ngay 04-05/11/2026.
+3) CHI SUA/BO SUNG TRONG QT02 (5 files):
+   assets/css/process_2.css
+   assets/js/process_2/reconciliation.js  [form sao ke de nhap, bo chu thich thua]
+   backend/process_2/ai_service.py       [Gemini 3.1 Flash Lite, retry 503]
+   backend/process_2/management/commands/check_qt02_gemini.py
+   backend/process_2/tests_gemini.py
+4) Khong kem thu vien .venv; tao moi theo Windows:
+   cd "DUONG_DAN_GIAI_NEN\PitchPro_06-11_Gemini_QT02"
+   py -3.12 -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   pip install -r requirements.txt
+   cd backend
+   python manage.py check
+   python manage.py migrate
+
+5) Nhap Gemini Key trong terminal nay:
+   $env:QT02_AI_PROVIDER = "gemini"
+   $env:GEMINI_API_KEY = Read-Host "Nhap Gemini API Key"
+   $env:GEMINI_MODEL = "gemini-3.1-flash-lite"
+   python manage.py check_qt02_gemini --smoke
+   python manage.py runserver
+
+6) Dang nhap vai tro Nhan vien (Staff), vao doi soat ngay 06/11/2026.
+   Nhap/doi chieu tien mat, sao ke > KIEM TRA VA PHAT HIEN NGOAI LE
+   > o ho so ngoai le nut "AI doc chung tu va goi y nguyen nhan".
+   Khong co ngoai le se khong co cho de bam nut AI.
+
+CHU Y: Khong dan API key vao chat hoac dua len GitHub.
+       De bao toan du lieu dang co cua ban, sao luu db.sqlite3
+       truoc khi thay du an hoac file database.
+Bam Ctrl+F5 tren trinh duyet sau khi thay JS/CSS.
+Kiem tra cu phap Python va JavaScript, tinh toan ven ZIP;
+khong goi AI that o may nguoi dung.
